@@ -1,0 +1,64 @@
+html,body{width:100%;height:auto!important;min-height:100%!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior-y:contain}
+body{position:relative;touch-action:pan-y;padding-bottom:calc(112px + env(safe-area-inset-bottom,0px))!important}
+.phone{display:block;width:min(430px,100vw);height:auto!important;min-height:100vh;max-height:none;overflow:visible!important;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;contain:none!important;padding-bottom:calc(128px + env(safe-area-inset-bottom,0px))!important}
+.panel.active{min-height:0;overflow:visible}
+#diet .foodRow .expand{display:grid!important;grid-template-rows:0fr}
+#diet .foodRow.expanded .expand{grid-template-rows:1fr}
+#diet .foodRow .expandInner{min-height:0;overflow:hidden}
+#diet .foodRow.expanded{align-items:start}
+#diet .foodRow.expanded .expand{grid-column:1/-1;width:100%;padding-top:8px;border-top:1px solid var(--line);margin-top:4px}
+.nativeGymCoordinates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.nativeGymCoordinates label{display:grid;gap:5px;color:#8c9aa3;font-size:9px;font-weight:800}
+.nativeGymCoordinates input{width:100%;min-width:0;padding:9px;border:1px solid #34434d;border-radius:9px;background:#0e151b;color:#edf2f4;font-size:12px;font-variant-numeric:tabular-nums}
+#nativeUseGymCoordinates{border-color:#ff806f;color:#ffb0a5}
+@media(max-width:360px){.nativeGymCoordinates{gap:5px}.nativeGymCoordinates input{padding:7px;font-size:10px}}
+
+.phone#appScroller{padding-bottom:calc(128px + env(safe-area-inset-bottom,0px))!important}
+.nav{bottom:calc(8px + env(safe-area-inset-bottom,0px))!important;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))!important}
+.nav button{min-width:0!important}
+.settingsIconSvg{display:block;width:18px;height:18px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+.settingsQuick .settingsIconSvg{width:19px;height:19px}
+.settingsHeadingIcon{width:23px;height:23px}
+.settingsIconSvg path{transform-box:fill-box;transform-origin:center;animation:settingsGearSpin 14s linear infinite}
+@keyframes settingsGearSpin{to{transform:rotate(360deg)}}
+#settings .section h2{display:flex;align-items:center;gap:4px}
+.fuelBuddyCard{display:flex;align-items:center;gap:10px;margin:11px 0;padding:6px 10px;border:1px solid #293742;border-radius:15px;background:linear-gradient(120deg,#121a22,#0d151c)}
+.fuelCatArt{display:block;width:68px;height:68px;flex:0 0 68px;overflow:visible;animation:catBob 2.3s ease-in-out infinite}
+.fuelCup{transform-box:fill-box;transform-origin:center;animation:cupDrop 2.3s cubic-bezier(.55,.05,.75,.35) infinite}
+.fuelCatTail{transform-box:fill-box;transform-origin:100% 50%;animation:catTailSway 1.15s ease-in-out infinite alternate}
+@keyframes catBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes catTailSway{to{transform:rotate(-15deg)}}
+@keyframes cupDrop{0%,28%{transform:translate(0,0) rotate(0)}48%{transform:translate(2px,7px) rotate(20deg)}66%{transform:translate(7px,17px) rotate(65deg)}76%,100%{transform:translate(7px,17px) rotate(65deg)}}
+.fuelBuddyCard>div{display:grid;gap:4px}
+.fuelBuddyCard strong{color:#f2f5f7;font-size:11px}
+.fuelBuddyCard small{color:#91a0ad;font-size:9px;line-height:1.35}
+.tt-page-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.tt-page-heading>div{min-width:0}
+.scheduleLabcoatArt{display:block;width:72px;height:72px;flex:0 0 72px;animation:labcoatFloat 2.8s ease-in-out infinite}
+@keyframes labcoatFloat{50%{transform:translateY(-3px)}}
+#roadmap .routeWalker{width:46px;height:48px}
+#roadmap .routeMonkeyArt{display:block;width:46px;height:48px;overflow:visible;animation:monkeyWalk .42s ease-in-out infinite alternate}
+#roadmap .monkeyArm,#roadmap .monkeyLeg{transform-box:fill-box;transform-origin:top center}
+#roadmap .monkeyArmLeft,#roadmap .monkeyLegRight{animation:monkeySwing .42s ease-in-out infinite alternate}
+#roadmap .monkeyArmRight,#roadmap .monkeyLegLeft{animation:monkeySwing .42s ease-in-out infinite alternate-reverse}
+#roadmap .monkeyTail{transform-box:fill-box;transform-origin:left center;animation:monkeyTail 1s ease-in-out infinite alternate}
+@keyframes monkeyWalk{to{transform:translateY(-2px)}}
+@keyframes monkeySwing{to{transform:rotate(18deg)}}
+@keyframes monkeyTail{to{transform:rotate(-12deg)}}
+.wellnessAnalysisPanel{padding-bottom:24px}
+.analysisGuide{display:flex;align-items:flex-start;gap:10px;margin:0 0 12px;padding:11px;border:1px solid #293742;border-radius:14px;background:linear-gradient(120deg,#121a22,#0d151c)}
+.analysisGuide>span{display:grid;place-items:center;width:25px;height:25px;flex:0 0 25px;border-radius:8px;background:#ff67521a;color:#ff8b75;font-size:16px;font-weight:900}
+.analysisGuide>div{display:grid;gap:4px}
+.analysisGuide strong{color:#eaf0f3;font-size:10px}
+.analysisGuide small{color:#91a0ad;font-size:9px;line-height:1.45}
+.wellnessLineChart{height:145px;margin-top:9px}
+.wellnessLineChart svg{display:block;width:100%;height:100%;overflow:visible}
+.sleepLineGrid{stroke:#33414b;stroke-width:.7}
+.sleepLineAxis,.sleepLineDate{fill:#8795a0;font:8px system-ui,sans-serif}
+.sleepLineDate{font-size:7px}
+.sleepLineTarget{stroke:#e6aa4d;stroke-width:1.3;stroke-dasharray:4 4}
+.sleepLinePath{fill:none;stroke:#9d80e8;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.sleepLinePoint{fill:#d1b6ff;stroke:#171d24;stroke-width:1.2}
+.wellnessLegendSleepLine{background:#9d80e8!important}
+.wellnessLegendTarget{background:#e6aa4d!important}
+@media(prefers-reduced-motion:reduce){.settingsIconSvg path,.fuelCatArt,.fuelCup,.fuelCatTail,.scheduleLabcoatArt,#roadmap .routeMonkeyArt,#roadmap .monkeyArm,#roadmap .monkeyLeg,#roadmap .monkeyTail{animation:none!important}}

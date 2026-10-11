@@ -1,0 +1,97 @@
+.wellnessPanel{padding-bottom:22px}
+.wellnessHeading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:19px 1px 14px}
+.wellnessHeading h1{margin:5px 0 4px;font-size:27px;letter-spacing:-.06em}
+.wellnessHeading p,.wellnessFormTitle p,.wellnessChartHeading p{margin:0;color:#929ba5;font-size:11px;line-height:1.5}
+.wellnessInsightsLink{flex:0 0 auto;border:1px solid #343f49;border-radius:12px;background:#171e25;color:#f4f2ec;padding:10px 11px;font-size:10px;font-weight:850}
+.wellnessInsightsLink span{color:var(--accent-strong);margin-left:4px}
+.wellnessDateCard,.wellnessRangeCard{display:grid;grid-template-columns:auto minmax(135px,1fr);align-items:center;gap:6px 12px;padding:12px!important}
+.wellnessDateCard>label,.wellnessRangeCard>label{color:#929ba5;font-size:9px;font-weight:900;letter-spacing:.12em}
+.wellnessDateCard>input,.wellnessRangeCard>select,.wellnessForm input,.wellnessForm select,.wellnessForm textarea{width:100%;min-width:0;border:1px solid #343d47;border-radius:11px;background:#10151b;color:#f4f2ec;padding:10px;font:inherit;font-size:12px}
+.wellnessDateCard>input,.wellnessRangeCard>select{padding:8px}
+.wellnessDateCard>strong{justify-self:end;color:#f4f2ec;font-size:11px;text-align:right}
+.wellnessDaySummary{grid-column:1/-1;color:#9ba4ad;font-size:10px}
+.wellnessAutoGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:9px 0}
+.wellnessAutoCard{min-width:0;border:1px solid #2a333c;border-radius:16px;background:linear-gradient(145deg,#171d23,#12171d);padding:12px}
+.wellnessAutoCard>span{display:block;color:#929ba5;font-size:8px;font-weight:900;letter-spacing:.1em}
+.wellnessAutoCard>strong{display:block;margin:7px 0 2px;overflow:hidden;font-size:19px;font-variant-numeric:tabular-nums;text-overflow:ellipsis;white-space:nowrap}
+.wellnessAutoCard>small{display:block;overflow:hidden;color:#929ba5;font-size:9px;line-height:1.4;text-overflow:ellipsis}
+.wellnessForm{display:grid;gap:11px;margin:8px 0;padding:15px!important}
+.wellnessFormTitle,.wellnessChartHeading>div{display:flex;align-items:center;gap:10px}
+.wellnessFormTitle h3,.wellnessChartHeading h3{margin:0 0 2px;font-size:14px}
+.wellnessIcon{width:35px;height:35px;flex:0 0 35px;display:grid;place-items:center;border:1px solid #343f49;border-radius:12px;font-size:18px;font-weight:900}
+.foodIcon{color:#ff9b79;background:#ff806f12;border-color:#ff806f35}
+.workoutIcon{color:#88aaff;background:#7096ff12;border-color:#7096ff35}
+.recoveryIcon{color:#9fd9ca;background:#79d1bb12;border-color:#79d1bb35}
+.wellnessForm>label,.wellnessFieldGrid>label{display:grid;gap:6px;color:#c9cfd5;font-size:10px;font-weight:750}
+.wellnessForm label small,.wellnessOptional{color:#858f99;font-size:9px;font-weight:600}
+.wellnessForm label small{display:inline}
+.wellnessForm input::placeholder,.wellnessForm textarea::placeholder{color:#626c76}
+.wellnessForm textarea{resize:vertical;min-height:55px}
+.wellnessFieldGrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.wellnessSubmit{display:flex;justify-content:space-between;align-items:center;border:0;border-radius:12px;background:var(--accent);color:#15191d;padding:11px 13px;font-size:11px;font-weight:900}
+.wellnessSubmit span{font-size:17px;line-height:10px}
+.wellnessStatus{min-height:17px;margin:2px 2px;color:#96d4bc;font-size:10px}
+.wellnessStatus.error{color:#ff9b91}
+.wellnessEntries{display:grid;gap:7px}
+.wellnessEmpty{padding:18px 12px;border:1px dashed #343d47;border-radius:16px;color:#939ca5;text-align:center;font-size:11px;line-height:1.55}
+.wellnessEntry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;border:1px solid #29313a;border-radius:15px;background:#12171d;padding:11px}
+.wellnessEntryMain{min-width:0}
+.wellnessEntryHead{display:flex;align-items:center;gap:7px}
+.wellnessEntryHead strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}
+.wellnessEntryCategory{color:#98a2ac;font-size:8px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.wellnessEntryMeta,.wellnessEntryNotes{margin-top:4px;color:#8d97a1;font-size:10px;line-height:1.45}
+.wellnessEntryNotes{overflow-wrap:anywhere}
+.wellnessEntryAction{flex:0 0 auto;border:1px solid #39434d;border-radius:10px;background:#1b2229;color:#f0f2f4;padding:8px 10px;font-size:9px;font-weight:850}
+.wellnessDelete{width:32px;height:32px;border:1px solid #41404a;border-radius:10px;background:#1a1c22;color:#abb2ba;font-size:17px}
+.wellnessRangeCard{margin-bottom:12px}
+.wellnessOverviewGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.wellnessOverviewCard{min-width:0;border:1px solid #2a333c;border-radius:16px;background:#14191f;padding:12px}
+.wellnessOverviewCard>span{display:block;color:#929ba5;font-size:8px;font-weight:900;letter-spacing:.1em}
+.wellnessOverviewCard>strong{display:block;margin:7px 0 2px;font-size:22px;font-variant-numeric:tabular-nums}
+.wellnessOverviewCard>strong small{font-size:11px;color:#a1aab3}
+.wellnessOverviewCard>small{color:#929ba5;font-size:9px}
+.wellnessTrendGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}
+.wellnessTrendCard{min-width:0;border:1px solid #2a333c;border-radius:16px;background:linear-gradient(145deg,#171d23,#12171d);padding:12px}
+.wellnessTrendCard>span{display:block;color:#929ba5;font-size:8px;font-weight:900;letter-spacing:.1em}
+.wellnessTrendCard>strong{display:block;margin:7px 0 3px;overflow:hidden;font-size:14px;text-overflow:ellipsis;white-space:nowrap}
+.wellnessTrendCard>small{display:block;color:#929ba5;font-size:9px;line-height:1.45}
+.wellnessChartCard{margin:9px 0;padding:13px!important}
+.wellnessChartHeading{display:flex;align-items:center;justify-content:space-between;gap:7px}
+.wellnessChartHeading h3{font-size:13px}
+.wellnessChartHeading p{font-size:9px}
+.wellnessChartHeading>strong{color:#f0f2f4;font-size:11px;white-space:nowrap}
+.wellnessChart{--wellness-days:7;display:grid;grid-template-columns:repeat(var(--wellness-days),minmax(0,1fr));align-items:end;gap:4px;height:143px;margin-top:13px;padding:5px 1px 0;border-bottom:1px solid #39434d}
+.wellnessBarDay{display:flex;min-width:0;height:100%;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px}
+.wellnessBarValue{max-width:100%;overflow:hidden;color:#abb5bf;font-size:8px;font-variant-numeric:tabular-nums;text-overflow:ellipsis;white-space:nowrap}
+.wellnessBarStack{display:flex;width:min(24px,75%);height:105px;align-items:flex-end;justify-content:center;gap:2px}
+.wellnessBar{display:block;width:100%;min-height:0;border-radius:5px 5px 1px 1px;background:linear-gradient(180deg,#ffa18a,var(--accent));transition:height .3s ease}
+.wellnessBar.workoutBar{background:linear-gradient(180deg,#a4bbff,#718fff)}
+.wellnessBar.recoveryBar{background:linear-gradient(180deg,#b0edda,#64c9aa)}
+.wellnessBar.sleepBar{background:linear-gradient(180deg,#d1b6ff,#9d80e8)}
+.wellnessBar.proteinBar{background:linear-gradient(180deg,#ffe09a,#e6aa4d)}
+.wellnessBar.distanceBar{background:linear-gradient(180deg,#9ee9ef,#4db9c5)}
+.wellnessBar.stepsBar{background:linear-gradient(180deg,#ffd19b,#e89554)}
+.wellnessBar.spendingBar{background:linear-gradient(180deg,#f3d593,#c69b42)}
+.wellnessBarDay>small{width:100%;overflow:hidden;color:#87919b;font-size:8px;text-align:center;text-overflow:ellipsis;white-space:nowrap}
+.wellnessChart[data-range="30"]{gap:1px}
+.wellnessChart[data-range="30"] .wellnessBarStack{width:70%}
+.wellnessChart[data-range="30"] .wellnessBarValue{font-size:6px}
+.wellnessChart[data-range="30"] .wellnessBarDay>small{font-size:7px}
+.wellnessChartEmpty{display:none;margin:10px 2px 0;color:#89939d;font-size:9px}
+.wellnessChartLegend{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;color:#929ba5;font-size:9px}
+.wellnessChartLegend span{display:flex;align-items:center;gap:5px}
+.wellnessChartLegend i{width:8px;height:8px;border-radius:3px;background:#64c9aa}
+.wellnessChartLegend .wellnessLegendSleep{background:#9d80e8}
+.wellnessChartLegend .wellnessLegendDistance{background:#4db9c5}
+.wellnessChartLegend .wellnessLegendSteps{background:#e89554}
+@media(max-width:360px){.wellnessHeading{flex-direction:column}.wellnessInsightsLink{align-self:flex-start}.wellnessDateCard,.wellnessRangeCard{grid-template-columns:1fr}.wellnessDateCard>strong{justify-self:start;text-align:left}.wellnessDaySummary{grid-column:auto}.wellnessChartCard{padding:10px!important}}
+@media(max-width:360px){.wellnessTrendGrid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.wellnessBar{transition:none}}
+.wellnessChart[data-range="365"]{grid-template-columns:repeat(365,12px);gap:2px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-color:#46515d #10151b;scrollbar-width:thin}
+.wellnessChart[data-range="365"] .wellnessBarStack{width:9px}
+.wellnessChart[data-range="365"] .wellnessBarValue{font-size:6px}
+.wellnessChart[data-range="365"] .wellnessBarDay>small{font-size:7px}
+.routeCollegeSchedule{display:grid;gap:6px;margin:8px 0 14px}
+.routeCollegeItem{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 8px;padding:10px 11px;border:1px solid var(--blink-border,#293742);border-radius:12px;background:var(--blink-surface,#121a22);color:var(--blink-text,#f2f5f7);font-size:10px}
+.routeCollegeItem span,.routeCollegeItem small{color:var(--blink-muted,#929ba5);font-size:9px}
+.routeCollegeItem small{grid-column:1/-1}

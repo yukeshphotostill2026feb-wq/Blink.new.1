@@ -1,0 +1,110 @@
+.nativeTrackerCard{margin:9px 0;padding:14px!important;border:1px solid #29343d!important;border-radius:16px!important;background:linear-gradient(145deg,#151d24,#0e141a)!important;color:#edf2f4!important}
+.nativeTrackerHeading{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.nativeTrackerHeading h3{margin:0;font-size:14px;color:#f4f7f8}
+.nativeTrackerHeading p{margin:4px 0 0;color:#8c9aa3;font-size:9px;line-height:1.45}
+.nativeTrackerLocation{display:grid;grid-template-columns:1fr auto;align-items:center;gap:5px 10px;margin-top:12px;padding:11px;border:1px solid #34434d;border-radius:12px;background:#0e151b}
+.nativeTrackerLocation span{color:#86949d;font-size:8px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.nativeTrackerLocation strong{grid-column:1;color:#f0f4f5;font-size:15px;font-variant-numeric:tabular-nums}
+.nativeTrackerLocation a{grid-column:2;grid-row:1/3;color:#ff9585;font-size:9px;font-weight:850;text-decoration:none}
+.nativeTrackerLocation small{grid-column:1/-1;color:#a6b2b9;font-size:9px;line-height:1.4}
+.nativeLocationGymStatus{display:flex;flex-wrap:wrap;justify-content:space-between;gap:5px;margin-top:7px;padding:9px 10px;border:1px solid #27323a;border-radius:10px;background:#10171d;font-size:9px}
+.nativeLocationGymStatus b{color:#dfe8eb}.nativeLocationGymStatus span{color:#aab8bf;text-align:right}
+.nativeLocationHistory{margin-top:13px;padding-top:12px;border-top:1px solid #27323a}
+.nativeLocationHistory h4{margin:0;color:#eaf0f2;font-size:11px}
+.nativeLocationHistory>p{margin:5px 0;color:#87959d;font-size:8px;line-height:1.5}
+.nativeLocationHistoryControls{display:flex;gap:7px;margin-top:8px}
+.nativeLocationHistoryControls input{min-width:0;flex:1;padding:8px;border:1px solid #34434d;border-radius:9px;background:#0e151b;color:#edf2f4;color-scheme:dark;font-size:10px}
+.nativeLocationHistoryControls button,.nativeLocationHistory>button{border:1px solid #34434d;border-radius:9px;background:#19242c;color:#eaf0f2;padding:8px 10px;font-size:9px;font-weight:850}
+.nativeLocationHistoryRows{display:grid;gap:5px;margin-top:8px;max-height:260px;overflow:auto}
+.nativeLocationHistoryRow{display:flex;justify-content:space-between;gap:8px;padding:7px 8px;border:1px solid #27323a;border-radius:8px;background:#10171d;color:#aab8bf;text-decoration:none;font-size:8px}
+.nativeLocationHistoryRow strong{color:#e9eff1;font-variant-numeric:tabular-nums;text-align:right}
+.locationHistoryTotals{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}
+.locationHistoryTotals>div{padding:9px;border:1px solid #27323a;border-radius:10px;background:#10171d}
+.locationHistoryTotals span{display:block;color:#86949d;font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.locationHistoryTotals strong{display:block;margin-top:4px;color:#f0f4f5;font-size:15px;font-variant-numeric:tabular-nums}
+.locationYearGraph{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));align-items:end;gap:4px;height:150px;margin-top:10px;padding:12px 8px 5px;border:1px solid #27323a;border-radius:12px;background:linear-gradient(180deg,#10171d,#0b1116)}
+.locationYearMonth{display:grid;grid-template-rows:12px 1fr 15px;align-items:end;justify-items:center;gap:4px;height:100%;min-width:0}
+.locationYearMonth strong{color:#9eaeb6;font-size:7px;font-variant-numeric:tabular-nums}
+.locationYearMonth i{display:block;align-self:end;width:min(100%,15px);height:var(--month-height);min-height:2px;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,#83ebce,#3c9f93);transform-origin:bottom;animation:locationBarGrow .7s cubic-bezier(.2,.8,.25,1) both}
+.locationYearMonth small{color:#87959d;font-size:7px}
+.nativeLocationHistory,.nativeLocationGymStatus{animation:trackerReveal .42s cubic-bezier(.2,.75,.3,1) both}
+.nativeTrackerLocation{animation:trackerGlow 1.8s ease-out both}
+.nativeTrackerActions button,.nativeLocationHistoryControls button,.nativeLocationHistory>button{transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease,border-color .2s ease}
+.nativeTrackerActions button:active,.nativeLocationHistoryControls button:active,.nativeLocationHistory>button:active{transform:scale(.96)}
+@keyframes trackerReveal{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+@keyframes trackerGlow{0%{box-shadow:0 0 0 0 #68d7bd55}100%{box-shadow:0 0 0 0 transparent}}
+@keyframes locationBarGrow{from{transform:scaleY(.12);opacity:.45}to{transform:scaleY(1);opacity:1}}
+.nativeTrackerStatus{display:inline-flex;align-items:center;gap:6px;color:#aab6bd;font-size:9px;font-weight:800}
+.nativeTrackerStatus:before{width:7px;height:7px;border-radius:50%;background:#798891;content:""}
+.nativeTrackerStatus[data-state="enabled"]:before{background:#75d2ae;box-shadow:0 0 0 3px #75d2ae20}
+.nativeTrackerStatus[data-state="required"]:before{background:#f4bc68}
+.nativeTrackerStatus[data-state="error"]:before{background:#ff8175}
+.nativeTrackerMetrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:12px 0}
+.nativeTrackerMetric{min-width:0;padding:9px;border:1px solid #27323a;border-radius:12px;background:#0e151b}
+.nativeTrackerMetric span{display:block;color:#86949d;font-size:8px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.nativeTrackerMetric strong{display:block;margin-top:5px;color:#f0f4f5;font-size:15px;font-variant-numeric:tabular-nums}
+.nativeTrackerActions{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.nativeTrackerActions button,.nativeTrackerButton{border:1px solid #34434d;border-radius:10px;background:#19242c;color:#eaf0f2;padding:9px 11px;font-size:9px;font-weight:850}
+.nativeTrackerActions button.primary,.nativeTrackerButton.primary{border-color:#ff806f;background:#ff806f;color:#161b1e}
+.nativeTrackerActions button:disabled{opacity:.48}
+.nativeTrackerNote{margin:9px 0 0;color:#82919a;font-size:9px;line-height:1.5}
+.nativeTrackerHistory{display:grid;gap:6px;margin-top:10px}
+.nativeTrackerHistoryRow{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 9px;border:1px solid #27323a;border-radius:10px;background:#10171d;color:#b8c3c9;font-size:9px}
+.nativeTrackerHistoryRow strong{color:#e9eff1;font-size:9px;text-align:right}
+.nativeTrackerSettings{margin:10px 0}
+.nativeTrackerSettings .settingsGroupHead{color:#edf2f4}
+.nativeTrackerSettings .settingRow{border-color:#27323a}
+.nativeTrackerSettings .settingRow b{color:#e6ecef}
+.nativeTrackerSettings .settingRow small{color:#86949d}
+.nativeTrackerSettings input[type=number]{width:76px;padding:8px;border:1px solid #34434d;border-radius:9px;background:#0e151b;color:#edf2f4}
+.nativeTrackerToggle{width:39px;height:22px;accent-color:#ff806f}
+.nativeMapWrap{margin-top:10px}
+.nativeMap{height:240px;overflow:hidden;border:1px solid #34434d;border-radius:13px;background:#111920}
+.nativeMapAttribution{margin-top:4px;color:#7f8c95;font-size:8px}
+.nativeMapStatus{min-height:14px;margin-top:6px;color:#9ba8af;font-size:9px;line-height:1.45}
+.nativeSleepLabel{color:#c4d0d5;font-size:9px;line-height:1.5}
+.nativeSleepDisclaimer{margin-top:6px;color:#87959d;font-size:8px;line-height:1.45}
+.nativeGymPresence{margin-top:9px;padding:9px;border:1px solid #33434c;border-radius:11px;background:#0e151b;color:#c8d3d8;font-size:9px;line-height:1.5}
+.leaflet-container{font:12px sans-serif}
+.leaflet-control-attribution{font-size:8px!important}
+.todayWeeklyCard{margin:9px 0;padding:13px!important}
+.todayGraphWeekdays,.todayGraphRow{display:grid;grid-template-columns:minmax(73px,1.2fr) repeat(7,minmax(0,1fr));gap:3px;align-items:center}
+.todayGraphWeekdays{margin-bottom:4px;color:#87959d;text-align:center}
+.todayGraphWeekdays small{font-size:8px}
+.todayGraphRow{min-height:62px;border-top:1px solid #25313a}
+.todayGraphLabel{color:#aab7be;font-size:8px;font-weight:800;line-height:1.25}
+.todayGraphDay{display:flex;height:54px;min-width:0;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px}
+.todayGraphDay span{max-width:100%;overflow:hidden;color:#aab7be;font-size:7px;font-variant-numeric:tabular-nums;text-overflow:ellipsis;white-space:nowrap}
+.todayGraphDay i{display:block;width:min(15px,72%);height:var(--graph-value);min-height:0;border-radius:4px 4px 1px 1px;background:var(--graph-color);transition:height .25s ease}
+.todayGraphLegend{display:flex;flex-wrap:wrap;gap:8px 12px;margin:9px 0;color:#929fa7;font-size:8px}
+.todayGraphLegend span{display:flex;align-items:center;gap:4px}
+.todayGraphLegend i{width:7px;height:7px;border-radius:50%}
+.todayGraphWorkout{background:#91a9ff}
+.todayGraphDistance{background:#5ccbd5}
+.todayGraphSteps{background:#efa861}
+.todayGraphRecovery{background:#75d5b8}
+.todayWeeklyReport{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:10px}
+.todayWeeklyReport>div{min-width:0;padding:8px;border:1px solid #27323a;border-radius:11px;background:#0e151b}
+.todayWeeklyReport span,.todayWeeklyReport small{display:block;color:#87959d;font-size:7px;line-height:1.4}
+.todayWeeklyReport strong{display:block;margin:5px 0 3px;overflow:hidden;color:#edf2f4;font-size:14px;font-variant-numeric:tabular-nums;text-overflow:ellipsis;white-space:nowrap}
+.todayGraphNote{margin:8px 1px 0;color:#82919a;font-size:8px;line-height:1.45}
+.nativeAppUsageCard .usageHighlight{margin-top:12px;border-color:#27323a}
+.nativeAppUsageCard .usageHighlight>div>span{color:#ff9a88}
+.nativeAppUsageCard .usageHighlight strong{color:#f0f4f6;font-size:16px}
+.nativeAppUsageCard .usageMark{background:#39221f;color:#ff9a88}
+.nativeAppUsageCard .appUsageList{margin-top:8px}
+@media(max-width:360px){.nativeTrackerMetrics{gap:4px}.nativeTrackerMetric{padding:7px}.nativeTrackerMetric strong{font-size:13px}.nativeMap{height:205px}}
+@media(prefers-reduced-motion:reduce){.nativeLocationHistory,.nativeLocationGymStatus,.nativeTrackerLocation,.locationYearMonth i{animation:none!important}.nativeTrackerActions button,.nativeLocationHistoryControls button,.nativeLocationHistory>button{transition:none}}
+@media(max-width:380px){.todayGraphWeekdays,.todayGraphRow{grid-template-columns:minmax(62px,1.1fr) repeat(7,minmax(0,1fr));gap:2px}.todayGraphLabel{font-size:7px}.todayWeeklyReport{grid-template-columns:1fr}.todayWeeklyReport>div{display:grid;grid-template-columns:1fr auto;gap:0 6px}.todayWeeklyReport strong{grid-column:2;grid-row:1/3;margin:0;align-self:center}.todayWeeklyReport small{grid-column:1}}
+.todayTrackingCards{display:grid;gap:8px;margin-top:8px}
+.todayTrackingCards>div{min-width:0}
+.todayTrackingCards .nativeTrackerCard,.todayTrackingCards .todayWeeklyCard{margin:0!important;border-radius:14px!important}
+.todayGraphHeading h3{margin:0 0 9px;color:#f1f1f2;font-size:13px}
+.nativeRecoveryScore{display:flex;align-items:baseline;gap:6px;margin-top:14px}
+.nativeRecoveryScore strong{color:#f4f4f2;font-size:34px;font-weight:900;line-height:1}
+.nativeRecoveryScore span{color:#9ea0a6;font-size:10px}
+.nativeRecoveryProgress{height:8px;margin:10px 0 12px;overflow:hidden;border-radius:99px;background:#29292e}
+.nativeRecoveryProgress i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#a9adb5,#ed3b43);transition:width .16s ease}
+body[data-discipline-theme="on"] .nativeRecoveryProgress i{background:#ed3b43}
+body[data-discipline-theme="on"] .phone *,body[data-discipline-theme="on"] .phone *::before,body[data-discipline-theme="on"] .phone *::after{animation-duration:.24s!important;transition-duration:.12s!important}
+@media(prefers-reduced-motion:reduce){body[data-discipline-theme="on"] .phone *,body[data-discipline-theme="on"] .phone *::before,body[data-discipline-theme="on"] .phone *::after{animation:none!important;transition:none!important}}

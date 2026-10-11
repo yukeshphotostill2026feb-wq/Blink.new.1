@@ -1,0 +1,98 @@
+#data{padding-bottom:22px}
+#data>.section{margin-top:8px}
+.blinkDataToolbar{display:flex;align-items:end;justify-content:space-between;gap:8px;margin:10px 0}
+.blinkDataToolbar label,.blinkEditorBody label{display:grid;gap:5px;color:#8f9ba4;font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.blinkDataToolbar select,.blinkEditorBody select,.blinkEditorBody input,.blinkEditorBody textarea{width:100%;min-width:0;border:1px solid #34434d;border-radius:9px;background:#0c1319;color:#edf2f4;padding:9px;font:inherit;letter-spacing:0;text-transform:none}
+.blinkDataToolbar select{width:auto;min-width:112px}
+.blinkDataToolbar button,.blinkEditorFoot button,.blinkDataAction{border:1px solid #3a4a55;border-radius:9px;background:#18242d;color:#edf2f4;padding:9px 11px;font-size:9px;font-weight:850}
+.blinkDataSummary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-bottom:8px}
+.blinkDataSummary article,.blinkDataPanel{min-width:0;border:1px solid #293742;border-radius:13px;background:linear-gradient(145deg,#121a21,#0d1318);color:#edf2f4}
+.blinkDataSummary article{padding:11px}
+.blinkDataSummary span,.blinkDataPanelHead span{display:block;color:#85939c;font-size:8px;font-weight:900;letter-spacing:.12em}
+.blinkDataSummary strong{display:block;margin-top:6px;font-size:20px;font-variant-numeric:tabular-nums}
+.blinkDataSummary strong small{font-size:10px}
+.blinkDataSummary article>small{display:block;margin-top:4px;color:#87959d;font-size:8px}
+.blinkDataGrid{display:grid;gap:8px}
+.blinkDataPanel{padding:12px;margin:8px 0}
+.blinkDataPanelHead{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.blinkDataPanelHead h3{margin:4px 0 0;font-size:12px}
+.blinkDataPanelHead>b{color:#dce4e8;font-size:9px;white-space:nowrap}
+.blinkDataBars{display:grid;grid-auto-columns:minmax(25px,1fr);grid-auto-flow:column;align-items:end;gap:5px;height:94px;margin-top:12px;overflow-x:auto}
+.blinkDataBar{display:grid;grid-template-rows:16px 1fr 14px;align-items:end;justify-items:center;gap:4px;min-width:24px;height:100%}
+.blinkDataBar strong{max-width:100%;overflow:hidden;color:#9ba8b0;font-size:7px;font-weight:700;text-overflow:ellipsis;white-space:nowrap}
+.blinkDataBar i{align-self:end;width:min(16px,75%);height:var(--bar-height);min-height:2px;border-radius:5px 5px 1px 1px;background:var(--bar-color);transform-origin:bottom;animation:blinkBarRise .42s ease-out both}
+.blinkDataBar small{color:#87949c;font-size:8px}
+@keyframes blinkBarRise{from{transform:scaleY(.12);opacity:.4}to{transform:scaleY(1);opacity:1}}
+.blinkAppsPanel{margin-top:8px}
+.blinkAppRanking{display:grid;gap:8px;margin-top:12px}
+.blinkAppRank{display:grid;grid-template-columns:minmax(70px,.8fr) minmax(35px,1fr) auto;align-items:center;gap:7px;font-size:9px}
+.blinkAppRank>span{overflow:hidden;color:#c6d0d5;text-overflow:ellipsis;white-space:nowrap}
+.blinkAppRank>i{height:5px;overflow:hidden;border-radius:99px;background:#26313a}
+.blinkAppRank>i>b{display:block;height:100%;border-radius:inherit;background:#ff6555}
+.blinkAppRank>strong{color:#edf2f4;font-size:8px;white-space:nowrap}
+.blinkDataAction{margin-top:10px}
+.blinkDataRows{display:grid;gap:5px;margin-top:10px}
+.blinkDataRows>div{display:grid;grid-template-columns:minmax(70px,.65fr) minmax(0,1fr);gap:3px 8px;padding:8px;border:1px solid #25313a;border-radius:9px;background:#0f161c}
+.blinkDataRows span{color:#aab7be;font-size:8px}
+.blinkDataRows strong{overflow-wrap:anywhere;color:#e4ebee;font-size:8px;text-align:right}
+.blinkDataRows small{grid-column:1/-1;color:#7f8d96;font-size:8px;line-height:1.4}
+.blinkDataEmpty{margin:10px 0 0;color:#89969e;font-size:9px;line-height:1.5}
+.blinkDataPanel>summary,.blinkEditorPanel>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;list-style:none}
+.blinkDataPanel>summary::-webkit-details-marker,.blinkEditorPanel>summary::-webkit-details-marker{display:none}
+.blinkDataPanel>summary span,.blinkEditorPanel>summary span{display:grid;gap:5px}
+.blinkDataPanel>summary small,.blinkEditorPanel>summary small{color:#87959e;font-size:8px;font-weight:900;letter-spacing:.12em}
+.blinkDataPanel>summary strong,.blinkEditorPanel>summary strong{color:#e9eff1;font-size:11px}
+.blinkDataPanel>summary i,.blinkEditorPanel>summary i{color:#ff806f;font-size:17px;font-style:normal;transition:transform .2s}
+.blinkDataPanel[open]>summary i,.blinkEditorPanel[open]>summary i{transform:rotate(45deg)}
+.blinkRecoveryDetails .blinkDataRows,.blinkDailyHistory .blinkDataRows{max-height:45vh;overflow:auto}
+.blinkEditorPanel{margin:8px 0;padding:11px;border:1px solid #293742;border-radius:13px;background:linear-gradient(145deg,#121a21,#0d1318);color:#edf2f4}
+.blinkEditorBody{display:grid;gap:9px;margin-top:12px}
+.blinkEditorBody textarea{resize:vertical;min-height:92px;line-height:1.5}
+.blinkEditorBody p{margin:0;color:#829099;font-size:8px;line-height:1.5}
+.blinkEditorFoot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.blinkEditorFoot span{color:#91a0a8;font-size:8px;line-height:1.4}
+.blinkEditorFoot button{background:#ff6555;border-color:#ff6555;color:#111820}
+.blinkRoutePreview{display:grid;gap:5px}
+.blinkRoutePreview>div{display:grid;grid-template-columns:54px 1fr;gap:4px 8px;padding:8px;border-left:2px solid #ff6555;background:#111920}
+.blinkRoutePreview b{grid-row:span 2;color:#ff9585;font-size:8px}
+.blinkRoutePreview span{color:#edf2f4;font-size:9px;font-weight:800}
+.blinkRoutePreview small{color:#8c9aa3;font-size:8px}
+.nativeGymDisclosure{margin:8px 0;border:1px solid #293742;border-radius:14px;background:linear-gradient(145deg,#121a21,#0d1318);overflow:hidden}
+.nativeGymDisclosure>summary{display:flex;align-items:center;gap:8px;min-height:54px;padding:10px 12px;cursor:pointer;list-style:none}
+.nativeGymDisclosure>summary::-webkit-details-marker{display:none}
+#nativeGymDisclosureSummary>span{display:grid;flex:1;gap:3px}
+#nativeGymDisclosureSummary>span strong{color:#edf2f4;font-size:11px}
+#nativeGymDisclosureSummary>span small{color:#87959d;font-size:8px}
+#nativeGymDisclosureSummary>i{color:#ff806f;font-size:16px;font-style:normal}
+.nativeGymDisclosure[open]>summary>i{transform:rotate(45deg)}
+.nativeGymDisclosure #nativeGymCard{margin:0!important;border:0!important;border-top:1px solid #293742!important;border-radius:0!important}
+.nativeRecoveryDetails{margin-top:9px;padding-top:8px;border-top:1px solid #293742}
+.nativeRecoveryDetails>summary{color:#ff9585;font-size:9px;font-weight:850;cursor:pointer}
+.nativeRecoveryDetailMetrics{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.nativeRecoveryDetailMetrics>div{padding:8px;border:1px solid #293742;border-radius:9px;background:#10171d}
+.nativeRecoveryDetailMetrics span,.nativeRecoveryDetailMetrics strong{display:block}
+.nativeRecoveryDetailMetrics span{color:#829099;font-size:8px}
+.nativeRecoveryDetailMetrics strong{margin-top:4px;color:#edf2f4;font-size:11px}
+.nativeSettingsLocation{display:grid;gap:4px;margin:10px 0;padding:10px;border:1px solid #293742;border-radius:10px;background:#10171d}
+.nativeSettingsLocation span{color:#87959d;font-size:8px;font-weight:900;letter-spacing:.1em}
+.nativeSettingsLocation strong{color:#edf2f4;font-size:12px;font-variant-numeric:tabular-nums}
+.nativeSettingsLocation small{color:#9eabb2;font-size:8px}
+.topNav{overflow-x:auto;scrollbar-width:none}
+.topNav::-webkit-scrollbar{display:none}
+#mind .mzRing{filter:drop-shadow(0 0 14px #ff655528)}
+#mind .mzProg{stroke:#ff6555;stroke-linecap:round;transition:stroke-dashoffset .6s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 0 5px #ff655577)}
+#mind .mzBreath{animation:blinkMindBreath 7s ease-in-out infinite;box-shadow:0 0 20px #ff655533}
+#mind .mzNum{font-variant-numeric:tabular-nums;text-shadow:0 0 18px #ffffff16;animation:blinkMindClock 1s steps(2,end) infinite}
+#mind .mzCue{color:#ff9383;transition:color .35s}
+@keyframes blinkMindBreath{0%,100%{transform:scale(.74);opacity:.48}50%{transform:scale(1.08);opacity:.92}}
+@keyframes blinkMindClock{0%,100%{opacity:1}50%{opacity:.88}}
+html,body{height:auto;min-height:100%;overflow-x:hidden}
+#diet .foodSearchCard,#diet .foodSearchInputWrap,#diet .foodSearchLine{position:relative;overflow:visible!important}
+#diet .foodSearchInputWrap .suggest{position:static!important;inset:auto!important;z-index:auto!important;width:100%;max-height:min(34vh,220px);overflow-y:auto;overscroll-behavior:contain;margin-top:6px}
+#diet .targetProfile,#diet .foodNutritionTitle,#diet .foodsTitleBar{position:relative}
+.phone{height:auto!important;min-height:100vh;overflow:visible!important}
+body.blinkKeyboardOpen .nav,body.blinkKeyboardOpen .bottomNav{display:none!important}
+body.blinkKeyboardOpen .phone{min-height:0;padding-bottom:20px!important}
+body.blinkKeyboardOpen #diet{padding-bottom:24px}
+@media(max-width:420px){.blinkDataSummary{gap:5px}.blinkDataSummary article{padding:9px}.blinkDataSummary strong{font-size:17px}.blinkDataGrid{gap:5px}.blinkAppRank{grid-template-columns:minmax(60px,.7fr) minmax(28px,1fr) auto}.blinkDataRows>div{grid-template-columns:minmax(60px,.55fr) minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){.blinkDataBar i,#mind .mzBreath,#mind .mzNum{animation:none!important}.blinkDataPanel>summary i,.blinkEditorPanel>summary i{transition:none}}
